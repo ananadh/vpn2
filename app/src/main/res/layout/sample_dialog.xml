@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@drawable/dialog_custom_borders"
+        android:orientation="vertical"
+        android:paddingTop="48dp"
+        android:paddingBottom="16dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:text="@string/disconnect"
+            android:fontFamily="@font/montserrat"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+            android:textStyle="normal"/>
+
+        <View
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#8BC34A"/>
+
+        <FrameLayout
+            android:id="@+id/disconnect_native"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_height="@dimen/_200sdp">
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:text="@string/subtext"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1" />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="@dimen/_130sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/cancel"
+            android:layout_margin="10dp"
+            android:textColor="@color/White"
+            app:shapeAppearance="@style/ShapeAppearance.Capsule" />
+
+    <Button
+        android:id="@+id/btn_disconnect"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/disconnect"
+        android:layout_margin="10dp"
+        android:textColor="@color/White"
+        app:shapeAppearance="@style/ShapeAppearance.Capsule" />
+
+
+</LinearLayout>
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/btn_disconnecticon"
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="-28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout"
+        app:srcCompat="@drawable/circle_rounded_filled"
+        android:contentDescription="@string/app_name" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

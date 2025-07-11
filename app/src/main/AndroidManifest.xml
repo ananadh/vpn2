@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mzhslab.koreavpn">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE"
+        tools:node="remove" />
+
+    <application
+        android:name="com.mzhslab.koreavpn.App_Class.MyApplication"
+        android:allowBackup="false"
+        android:debuggable="false"
+        android:extractNativeLibs="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="HardcodedDebugMode"
+        tools:replace="android:extractNativeLibs,android:allowBackup"
+        tools:targetApi="m">
+
+        <activity
+            android:name="com.mzhslab.koreavpn.Activity.Location_Feature.Location_Screen"
+            android:exported="false"
+            android:label="@string/title_activity_maps" />
+
+        <activity
+            android:name="com.mzhslab.koreavpn.Server_Module.Server_Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name="com.mzhslab.koreavpn.Activity.Home_Module.Home_Activity"
+            android:configChanges="screenLayout|orientation|screenSize"
+            android:label="@string/title_activity_navigation"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name="com.mzhslab.koreavpn.Activity.Terms_Conditions_Feature.Terms_Conditions_Screen"
+            android:theme="@style/AppTheme" />
+
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.mzhslab.koreavpn.Splash_screen.Splash"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            tools:ignore="LockedOrientationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.mzhslab.koreavpn.Proxy.Proxy_Apps_Screen" />
+        <activity android:name="com.mzhslab.koreavpn.Activity.Menu_Module.Menu_Activity" />
+        <activity android:name="com.mzhslab.koreavpn.Activity.Connection_Module.Connect" />
+
+        <!--        <activity android:name="com.mzhslab.koreavpn.Activity.Location_Feature.Location_Screen" />-->
+
+        <service
+            android:name="com.mzhslab.koreavpn.Services.vpn_connect_time"
+            android:exported="false"
+            android:stopWithTask="true" />
+
+        <activity
+            android:name="de.blinkt.openvpn.ConnectVpnAuthActivity"
+            android:autoRemoveFromRecents="true"
+            android:excludeFromRecents="true"
+            android:theme="@style/blinkt.dialog"
+            tools:targetApi="lollipop" />
+
+        <activity
+            android:name="de.blinkt.openvpn.DisconnectVPNActivity"
+            android:autoRemoveFromRecents="true"
+            android:excludeFromRecents="true"
+            android:noHistory="true"
+            android:theme="@style/blinkt.dialog"
+            tools:ignore="UnusedAttribute" />
+
+        <service
+            android:name="de.blinkt.openvpn.core.OpenVPNService"
+            android:exported="false"
+            android:permission="android.permission.BIND_VPN_SERVICE">
+            <intent-filter>
+                <action android:name="android.net.VpnService" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.mzhslab.koreavpn.Services.Api_Fetch_Service.Fetch_Service"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-8439361516255911~7829563529" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <meta-data
+            android:name="com.startapp.sdk.RETURN_ADS_ENABLED"
+            android:value="false" />
+        <meta-data
+            android:name="com.startapp.sdk.APPLICATION_ID"
+            android:value="@string/startapp_id" />
+    </application>
+
+</manifest>

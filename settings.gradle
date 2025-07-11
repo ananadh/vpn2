@@ -1,0 +1,2 @@
+rootProject.name = "Koreavpn sdk12"
+include ':app', 'openvpn',':Country'

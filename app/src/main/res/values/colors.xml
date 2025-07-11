@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4AA7DA</color>
+    <color name="colorPrimaryDark">#208BC5</color>
+    <color name="locationitem">#0D208BC5</color>
+
+    <color name="colorAccent">#4AA7DA</color>
+    <color name="font_default">#9ecff0</color>
+    <color name="colorSkyBlue">#25abe0</color>
+    <color name="gaugesBackground">#AA6060</color>
+    <color name="progressBackground">#BF360C</color>
+    <color name="progressColor">#AAAAAA</color>
+    <color name="dlGauge">#FFFF00</color>
+    <color name="White">#FFFF</color>
+    <color name="blue">#03A9F4</color>
+    <color name="yellow">#FFC107</color>
+    <color name="colorGreen">#FF5722</color>
+    <color name="orange">#E6FF5722</color>
+    <color name="colorRed">#e72c30</color>
+    <color name="light_blue">#dbe7f7</color>
+    <color name="gray">#1AAAAAAA</color>
+    <color name="grayView">#AFADAD</color>
+    <color name="grayViewText">#AFADAD</color>
+    <color name="grayViewTextDark">#706D6D</color>
+    <color name="black">#322E2E</color>
+
+    <color name="graylocation">#5f5f5f</color>
+    <color name="round_corner_progress_bar_background_default">#5f5f5f</color>
+    <color name="round_corner_progress_bar_progress_default">#7f7f7f</color>
+    <color name="round_corner_progress_bar_secondary_progress_default">#00000000</color>
+    <color name="sample_progress_background">#0A000000</color>
+    <color name="sample_progress_primary">#EF5350</color>
+    <color name="server_list">#001933</color>
+
+    <color name="primaryColor">#FFBB86FC</color>
+    <color name="primaryColorLight">#FFBB86FC</color>
+    <color name="primary">#A020F0</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="lightColors">#E3D1F8</color>
+    <color name="lightColorsShadow">#F1E7FB</color>
+    <color name="purple">#A020F0</color>
+    <color name="menuColor">#A020F0</color>
+    <color name="lightColorsShadowRecycle">#F3E9FA</color>
+    <color name="pakvpn">#66BB6A</color>
+
+    <color name="connected">#078A0C</color>
+    <color name="disconnected">#D61F12</color>
+
+</resources>

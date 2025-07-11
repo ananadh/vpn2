@@ -1,0 +1,43 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="100dp"
+    android:background="@color/colorGreen"
+    android:padding="10dp"
+    android:layout_centerInParent="true">
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageDialog"
+        android:indeterminate="true"
+        android:indeterminateTintMode="src_atop"
+        android:indeterminateTint="@color/White"
+        android:visibility="gone"
+        android:layout_marginEnd="16dp"/>
+
+
+    <TextView
+        android:id="@+id/textDialog"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/White"
+        android:textStyle="bold"
+        android:text="@string/fetching_loc"
+        android:textSize="@dimen/_15sdp"
+        android:layout_toEndOf="@+id/imageDialog"/>
+
+    <TextView
+        android:id="@+id/textDialog1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/wait_text"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="13sp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/textDialog"
+        android:layout_toEndOf="@+id/imageDialog"
+        android:layout_marginEnd="18dp"/>
+
+</RelativeLayout>

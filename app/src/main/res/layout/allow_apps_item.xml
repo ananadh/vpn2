@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="4"
+    android:minHeight="42dp"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp">
+
+    <ImageView
+        android:id="@+id/app_icon"
+        android:layout_width="@android:dimen/app_icon_size"
+        android:layout_height="@android:dimen/app_icon_size"
+        android:layout_rowSpan="1"
+        android:contentDescription="@null"
+        android:paddingStart="@dimen/activity_vertical_margin"
+        android:scaleType="centerInside"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="0dip"
+        android:layout_rowSpan="1"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal|center_vertical"
+        android:layout_marginTop="2dip"
+        android:ellipsize="marquee"
+        android:paddingStart="8dp"
+        android:fontFamily="@font/montserrat"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp"
+        tools:text="@string/app_name" />
+
+    <CheckBox
+        android:id="@+id/app_selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_rowSpan="1"
+        android:layout_marginTop="10dip"
+        android:buttonTint="@color/colorGreen"
+        android:ellipsize="marquee"
+        android:paddingEnd="@dimen/activity_vertical_margin" />
+    
+</GridLayout>

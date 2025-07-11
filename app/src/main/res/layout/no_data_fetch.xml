@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/White"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/textDialog"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/fserifdisplay_bold"
+        android:text="Not able to fetch data..."
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/_18sdp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_below="@id/textDialog"
+        android:layout_centerInParent="true">
+
+        <Button
+            android:id="@+id/retry_btn"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:textSize="13.5sp"
+            android:textStyle="bold"
+            android:textColor="@color/White"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/no_internet"
+            android:text="TRY AGAIN" />
+    </RelativeLayout>
+</RelativeLayout>

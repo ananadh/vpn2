@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/terms_close"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_baseline_cancel_24" />
+
+        <LinearLayout
+            android:id="@+id/temp_id_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewService"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Privacy is important"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/White"
+                android:textSize="20dp"
+                app:fontFamily="@font/montserrat">
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/clicked"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/temp_id_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/textViewdescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/description"
+                android:textColor="@color/White"
+                android:textSize="10dp"
+                app:fontFamily="sans-serif">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/clicked"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/texView"
+            android:textColor="@color/White"
+            android:textSize="13dp"
+            app:fontFamily="@font/montserrat" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/Accept_btn"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_margin="10dp"
+                android:textSize="17dp"
+                android:gravity="center"
+                android:background="@drawable/dound_dark_background"
+                android:fontFamily="@font/montserrat"
+                android:text="Accept &amp; Continue"
+                android:textAllCaps="false"
+                android:textColor="#FFEB3B">
+
+            </Button>
+
+            <Button
+                android:id="@+id/Exit_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/shape_rounded_sky_blue_button"
+                android:text="Exit"
+                android:visibility="gone"
+                android:fontFamily="@font/montserrat"
+                android:textAllCaps="false"
+                android:textColor="#000000">
+
+            </Button>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
